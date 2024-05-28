@@ -10,16 +10,44 @@
 </head>
 <body>
     <head>
-        <div class="row">
+        <div class="row no-gutters">
             <!--we are addind <a> anchor tag which is its link and that going to connect us back to index.html-->
             <a href="index.html" class="col-md-4 logo"></a>
             <div class="col-md-8">
                     
-                        <div class="row bg-color-name-title">
+                        <div class="row no-gutters bg-color-name-title">
                          <div class="col heading">
                             <h1 class="name">Rosie Odenkirk</h1>
                             <h2 class="title">Full Stack Developer</h2>
-                         </div>   
+                         </div> 
+
+                        </div>
+
+                        <div class="row no-gutters">
+                            <div class="col">
+                                <!--use class oe list-line , which is supplied by Bootstrap and stops a list from displaying vertically and display it horizontally instead>-->
+                                <ul id="nav" class="list-inline menucontainer">
+                                    
+                                    <li class="col-6 col-sm-3 ui-menu-color-home list-inline-item">
+                                        <!--provide <a> tag as is traditional, our menu items will be <a> tags contained inside these list we also add span tag -->  
+                                            <!--adding font-awsome to the span element and they recommed using the (I)element which used to be the italics element-->
+                                          <a href="#"><i class="fa fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                      </li>
+                                      <li class="col-6 col-sm-3 ui-menu-color-resume list-inline-item">
+                                        <!--provide <a> tag as is traditional, our menu items will be <a> tags contained inside these list we also add span tag -->  
+                                          <a href="#"><i class=" fa fa-graduation-cap" aria-hidden="true"></i><span>Resume</span></a>
+                                      </li>
+                                      <li class="col-6 col-sm-3 ui-menu-color-contact list-inline-item">
+                                        <!--provide <a> tag as is traditional, our menu items will be <a> tags contained inside these list we also add span tag -->  
+                                          <a href="#"><i class="fa fa-commont-o" aria-hidden="true"></i><span>Contact</span></a>
+                                      </li>
+                                      <li class="col-6 col-sm-3 ui-menu-color-download list-inline-item">
+                                        <!--provide <a> tag as is traditional, our menu items will be <a> tags contained inside these list we also add span tag -->  
+                                          <a href="#"><i class="fa fa-download" aria-hidden="true"></i><span>Download</span></a>
+                                      </li>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
