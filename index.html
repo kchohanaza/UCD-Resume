@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-   <!--- <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"> >
+   <!--- <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"> -->
 
     <title>Rosie</title>
 </head>
@@ -22,11 +22,10 @@
             <div class="col-md-8">
                     
                         <div class="row no-gutters bg-color-name-title">
-                         <div class="col heading">
-                            <h1 class="name">Khadeeja Chohan</h1>
-                            <h2 class="title">Full Stack Developer</h2>
-                         </div> 
-
+                            <div class="col heading">
+                                <h1 class="name">Khadeeja Chohan</h1>
+                                <h2 class="title">Full Stack Developer</h2>
+                            </div>
                         </div>
 
                         <div class="row no-gutters">
@@ -69,15 +68,82 @@
         </section>
 
         <footer class="container-fluid">
-            <div class="row">
+            <div id="footer-details" class="row">
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                   Full Stack Web Developer. Skilled in everything from HTML to Heroku.
+                   The capacity for structual and design thinking. 
+                </p>
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Download</h5>
+                <p class="inline-block">
+                    Need a printable version of my CV? Download it here.
+                    <!--we want them to download the (PDF), we need to use an <a> tag because that will link to the PDF.-->
+                        <!--we will set target="blank" so it will open up in a separate tab or window without losing the content 
+                        on our main page.-->
+                        <a href="#" target="_blank" class="cv-pdf">
+                            <i class="fa fa-download" aria-hidden="true"></i>
+                            <!--SR-only is screen reader only, so it won't be displayed on a regular screen.-->
+                            <span class="sr-only">Download link.</span>
+
+                        </a>
+                </p>
             </div>
             <div class="col-sm-4">
                 <h5 class="uppercase general-sub">Social</h5>
+                <!--the unordered list is going to have Bootstrap's default class of list-inline, just like we used before.-->
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                 <a target="_blank" href="#">
+                <!--we using font awesome icons here -->
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+                 </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                     <a target="_blank" href="#">
+                    <!--we using font awesome icons here -->
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                     </a>
+                    </li>
+
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                      <!--we using font awesome icons here -->
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">Linkedin</span>
+                        </a>
+                     </li>
+
+       
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                    <!--we using font awesome icons here -->
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                    <span class="sr-only">Pinterest</span>
+                        </a>
+                     </li>
+
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                 <!--we using font awesome icons here -->
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                        </a>
+                     </li>
+
+                     <li class="list-inline-item">
+                        <a target="_blank" href="#">
+                <!--we using font awesome icons here -->
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+               </a>
+             </li>
+            </ul>
             </div>
         </div>
 

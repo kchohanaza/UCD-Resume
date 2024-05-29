@@ -42,6 +42,10 @@ h4 {
     color: #fafafa;
 }
 
+.inline-block {
+    display:inline-block ;
+}
+
 
 
 
@@ -131,6 +135,7 @@ under the text of our link*/
     font-size: 26px;
 
 }
+
 .menuitem span {
     display: block;
     width: 100%;
@@ -145,9 +150,10 @@ under the text of our link*/
 /*--------------------------------------------------Hover.css */
 
 .hvr-sweep-to-bottom:before {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2) !important;
     height: 120px;
 }
+
 
 /* ------------------------------------------------------------Footer */
 
@@ -158,4 +164,54 @@ footer {
     margin: 0;
 
 }
+/* we are going to target the Font Awesome icon, the (I) element , inside cv-pdf */
+.cv-pdf i {
+    font-size: 18px;
+    color:#fafafa; 
+    text-align: center;
+    padding-left: 5px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+}
+    /* add vendor prefixes here as well on my transition -moz for mozilla, -webkit browesers, -o for opera */
 
+/* we using transitions here rather than in the (hover) pseudo-element.
+    The reason for this is that you always want to put the transitions in the parent element, rather then the hovered.
+    This means that the transition will take effectwhen the mouse hovers and when the mouse leaves.*/
+   
+.cv-pdf i:hover {
+    color:#e84610 ;
+}
+.socal-links {
+    padding-bottom: 15px;
+}
+
+/* adding some Font Awesome icons here in social-links */
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+      -o-transition: all 0.35s ease-in-out;
+
+}
+/* when you set the border-radius to 50% when something has equal height and width, then you get a circle.*/
+
+.social-links li a i:hover {
+    background: #e84610;
+}
+
+#footer-details {
+    padding: 20px;
+}
