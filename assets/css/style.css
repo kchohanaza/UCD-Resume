@@ -7,6 +7,10 @@
 
 }
 
+.bg-color-three-reasons {
+    background-color: #fff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -46,7 +50,28 @@ h4 {
     display:inline-block ;
 }
 
+/* we are going to put this in our general CSS areabecause we are going to use this more than once throughout the site.*/
 
+.row-table {
+    display: table;
+}
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+/*we are setting it to (none) here, just tomake sure that our column doesn't end up with any unsightly breaks.*/
+
+}
+
+.section-heading {
+   font-family: "Exo" , sans-serif;
+   font-weight: 300;
+   margin-top: 25px;
+   margin-bottom: 40px;
+}
+
+
+    
 
 
 
